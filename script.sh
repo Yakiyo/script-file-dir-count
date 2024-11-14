@@ -8,7 +8,7 @@ while IFS= read -r line || [[ -n $line ]]; do
 	# if line starts with d, it is directory
     if [[ $line == d* ]];
     then
-		((++dirs))
+	((++dirs))
     elif [[ $line == -* ]]; # if starts with -, it is file
     then
     	((++files))
